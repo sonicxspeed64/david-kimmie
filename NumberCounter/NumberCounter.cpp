@@ -1,4 +1,4 @@
-// NumberCounter.cpp : Use back shoulder buttons to increment or decrement counter.
+// NumberCounter.cpp : Use up or down to increment or decrement counter.
 //
 
 #include <iostream>
@@ -7,6 +7,9 @@
 #include <Windows.h>
 
 using namespace std;
+
+#define CountUp 72
+#define CountDown 80
 
 
 int main()
@@ -28,8 +31,8 @@ int main()
         int prevInput = counter;
 
         int key = _getch();
-        if (key == 72) counter++;
-        if (key == 80) counter--;
+        if (key == CountUp) counter++;
+        if (key == CountDown) counter--;
 
         if (prevInput != counter)
         {
