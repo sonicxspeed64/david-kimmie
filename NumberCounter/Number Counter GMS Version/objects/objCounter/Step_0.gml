@@ -18,17 +18,11 @@ var file = file_text_open_write("NUMBER.txt");
 file_text_write_real(file, count[0]);
 file_text_close(file);
 
-timesince = 60
+timesince = 123
 inputted = true
 
 if lines < 7
-{
 lines ++
-}
-else
-{
-
-}
 
 for (k = lines - 1; k > 1; k --)
 count[k] = count[k - 1]
